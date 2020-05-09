@@ -1,7 +1,6 @@
 // store all required elements in accessible variables
-
-const startButton = document.getElementById('start-btn')
-const nextButton = document.getElementById('next')
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn')
 const questionContainer = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtons = document.getElementById('answer-btn')
@@ -12,13 +11,11 @@ let shuffledQuestions, currentQuestionIndex
 
 //click event to start the game
 startButton.addEventListener('click', startGame)
-
 //initiates next button
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 })
-
 //function that runs on game start
 function startGame(){
     startButton.classList.add('hide')
