@@ -7,6 +7,7 @@
     --bg-color: #cfd8dc;
     --bg-wrong: #aa0411;
     --bg-correct: #158e00;
+    --primary: #3d5ded;
 }
 body{ 
     padding: 0;
@@ -35,13 +36,25 @@ body{
     font-size: 24px;
     margin-bottom: 30px;
     margin-top: 10px;
+    font-weight: bold;
+}
+.title {
+    text-align: center;
+    font-size: large;
+    font-weight: 400;    
+    padding: 20px;
+    color: var(--primary);
+    /* margin-bottom: 30rem; */
+}
+small {
+    font-size: 14px;    
 }
 #score {
-    color: #636160;
+    color: #616161;
     font-size: 16px;
     text-align: center;
     margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .btn-grid{
@@ -81,8 +94,13 @@ body{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: #3d5ded;
+    background-color: var(--primary);
     color: #fff;
+    transition: all 0.6s cubic-bezier(.25, .8, .25, 1);
+}
+.start-btn:hover, .next-btn:hover{
+    background-color: var(--bg-color);
+    color: #000000;box-shadow: 0 0 8px  ;
 }
 .controls {
     display: flex;
